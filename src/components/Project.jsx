@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  color: grey;
   margin-top: 1rem;
   display: flex;
   margin-left: 6rem;
@@ -19,18 +18,26 @@ const Text = styled.div`
   margin-left: 2rem;
 `;
 
+const Title = styled.h2`
+font-family: 'Righteous'
+`;
+
+const Paragraph = styled.p`
+font-family: 'Nunito', sans-serif;
+`;
+
 export default function Project() {
   return(
     <Container>
       <Image src="https://via.placeholder.com/350x200" alt="placeholder" />
       <Text>
-      <h2>Project 1</h2>
-      <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc
+      <Title>Project 1</Title>
+      <Paragraph>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc
          ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium
           resultantes. denique pro philosopho cantor et in locum oratoris doctor artium
           ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis organa
           fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque et
-          histrionici gestus instrumenta non levia.</p>
+          histrionici gestus instrumenta non levia.</Paragraph>
       </Text>
     </Container>
 
